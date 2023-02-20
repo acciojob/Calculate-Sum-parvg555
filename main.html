@@ -1,16 +1,47 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+	<h1 id="heading">Hello, Welcome to JS</h1>
+	<h2 id="Sum"></h2>
 
+	<input type="number" id="n1" placeholder="number 1">
+	<input type="number" id="n2" placeholder="number 2">
+
+	<button onclick="calculateSum()" id="sum_btn">Calculate</button>
+	<!-- <button onclick="getalert()">Click on Me for Alert</button>
+    <button onclick="getprompt()">Click on Me for Prompt</button>
+    <button onclick="getconfirm()">Click on Me for Confirm</button> -->
+
+	<script>
+		// document.getElementById("trial").innerHTML = document.getElementById("heading").innerHTML
+
+		function calculateSum() {
+			var x = Number(document.getElementById("n1").value)
+			var y = Number(document.getElementById("n2").value)
+			document.getElementById("Sum").innerHTML = x + y
+		}
+        // function getalert(){
+        //     alert("Hey, this is an alert")
+        // }
+
+        // function getprompt(){
+        //     var x = prompt("Enter something")
+        //     document.getElementById("trial").innerHTML = x
+        // }
+
+        // function getconfirm(){
+        //     var y = confirm("Yes No")
+        //     console.log(y)
+        // }
+	</script>
 </body>
 
 </html>
